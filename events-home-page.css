@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+      "header header header"
+      "main aside nav"
+      "main1 aside1 nav1"
+      "footer footer footer";
+  padding: 1em;
+  gap: 10px
+}
+
+.event-header{
+  border: 5px solid dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+
+h1{
+  border: 5px solid rgb(30, 255, 150);
+  width: 300px;
+  margin-left: 455px;
+  padding: 25px;
+}
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+ 
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+
+body{
+  border: 5px solid black;
+}
